@@ -2,6 +2,19 @@
 
 Automatically convert Instagram comments into qualified leads with DM automation, CRM integration, and multi-channel sync.
 
+## 🚀 Quick Start
+
+**Want to get this working with YOUR Instagram account?**
+
+→ **[Follow the Complete Setup Guide](./SETUP_GUIDE.md)** (45 minutes to working system)
+
+The guide walks you through:
+- Setting up Neon PostgreSQL database
+- Configuring Google Sheets + Brevo integrations
+- Creating Meta App and connecting Instagram
+- Deploying to Vercel with all environment variables
+- Testing the complete flow end-to-end
+
 ## Features
 
 - **Instagram Comment Detection**: Receives webhooks when users comment on your Instagram posts
