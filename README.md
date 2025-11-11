@@ -4,9 +4,23 @@ Automatically convert Instagram comments into qualified leads with DM automation
 
 ## 🚀 Quick Start - PROOF OF CONCEPT
 
-**Want to PROVE this works with YOUR Instagram account?**
+**Choose your path:**
 
-→ **[Follow the Proof of Concept Guide](./PROOF_OF_CONCEPT.md)** (20 minutes)
+### New vs Existing Instagram Account?
+→ **[NEW_VS_EXISTING_WORKFLOW.md](./NEW_VS_EXISTING_WORKFLOW.md)** - Side-by-side comparison of workflows
+
+**This clarifies:**
+- Brand new Instagram Business account (from scratch)
+- Existing Instagram account (plug and play)
+- Why Development Mode works for BOTH scenarios
+
+---
+
+### Ready to Execute?
+
+→ **[PROOF_OF_CONCEPT.md](./PROOF_OF_CONCEPT.md)** - Simplified 5-step guide (20 min)
+
+→ **[EXECUTE_NOW.md](./EXECUTE_NOW.md)** - Detailed execution checklist (30 min)
 
 **What you'll prove:**
 - Instagram comment → System auto-sends DM (ZERO human action)
