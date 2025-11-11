@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
 import { IntakeSchema } from '@/lib/validators';
-import { appendLeadToSheet } from '@/lib/googleSheets';
-import { upsertBrevoContact } from '@/lib/brevo';
 import { logInfo, logError } from '@/lib/logging';
 
 /**
@@ -63,22 +61,7 @@ export async function POST(request: NextRequest) {
 
     logInfo('Lead created in database', { id: lead.id, email: lead.email });
 
-    // 5. Append to Google Sheets (async, don't await)
-    const sheetData = {
-      ...validatedData,
-      createdAt: lead.createdAt.toISOString(),
-      source: 'instagram_comment',
-    };
-    appendLeadToSheet(sheetData).catch((err) => {
-      logError('Google Sheets append failed (background)', err);
-    });
-
-    // 6. Upsert to Brevo (async, don't await)
-    upsertBrevoContact(validatedData).catch((err) => {
-      logError('Brevo upsert failed (background)', err);
-    });
-
-    // 7. Redirect to thank-you page (303 for POST-Redirect-GET)
+    // 5. Redirect to thank-you page (303 for POST-Redirect-GET)
     const thankYouUrl = new URL('/thank-you', request.url);
     return NextResponse.redirect(thankYouUrl, 303);
 
