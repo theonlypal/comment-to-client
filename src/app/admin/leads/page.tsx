@@ -35,6 +35,8 @@ export default async function AdminLeadsPage({ searchParams }: PageProps) {
     take: 100,
   });
 
+  type Lead = typeof leads[0];
+
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +76,7 @@ export default async function AdminLeadsPage({ searchParams }: PageProps) {
                 </tr>
               </thead>
               <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                {leads.map((lead) => (
+                {leads.map((lead: Lead) => (
                   <tr key={lead.id}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
                       {new Date(lead.createdAt).toLocaleDateString()}
