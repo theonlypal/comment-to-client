@@ -38,7 +38,7 @@ export default function HomePage() {
           </motion.div>
 
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...springConfig, delay: 0.1 }}
@@ -51,7 +51,7 @@ export default function HomePage() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...springConfig, delay: 0.2 }}
@@ -124,11 +124,11 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={springConfig}
           >
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               <span className="text-zinc-50">How It</span>{' '}
               <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">Works</span>
             </h2>
-            <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto">
               Three simple steps to turn your Instagram engagement into revenue
             </p>
           </motion.div>
@@ -181,15 +181,15 @@ export default function HomePage() {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl" />
 
                 {/* Step number */}
-                <div className="text-6xl font-bold text-zinc-800 mb-4">{item.step}</div>
+                <div className="text-4xl font-bold text-zinc-800 mb-4">{item.step}</div>
 
                 {/* Icon */}
-                <div className="w-14 h-14 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center mb-6 shadow-[0_20px_50px_rgba(139,92,246,0.3)]">
+                <div className="w-12 h-12 bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl flex items-center justify-center mb-4 shadow-[0_20px_50px_rgba(139,92,246,0.3)]">
                   {item.icon}
                 </div>
 
-                <h3 className="text-2xl font-semibold text-zinc-50 mb-4">{item.title}</h3>
-                <p className="text-zinc-400 leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-semibold text-zinc-50 mb-3">{item.title}</h3>
+                <p className="text-sm text-zinc-400 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -206,7 +206,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={springConfig}
           >
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">Everything</span>{' '}
               <span className="text-zinc-50">You Need</span>
             </h2>
@@ -228,8 +228,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-zinc-50 mb-4">Instant Automation</h3>
-              <p className="text-lg text-zinc-400 mb-6">Zero manual work. Comments trigger DMs in seconds via Meta webhooks with signature verification.</p>
+              <h3 className="text-2xl font-bold text-zinc-50 mb-3">Instant Automation</h3>
+              <p className="text-base text-zinc-400 mb-4">Zero manual work. Comments trigger DMs in seconds via Meta webhooks with signature verification.</p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-zinc-800 border border-zinc-700 rounded-full text-sm text-zinc-300">Real-time</span>
                 <span className="px-3 py-1 bg-zinc-800 border border-zinc-700 rounded-full text-sm text-zinc-300">Verified</span>
@@ -292,8 +292,8 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center mb-4">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-zinc-50 mb-2">{feature.title}</h3>
-                <p className="text-sm text-zinc-400">{feature.description}</p>
+                <h3 className="text-lg font-semibold text-zinc-50 mb-2">{feature.title}</h3>
+                <p className="text-sm text-zinc-400 leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -311,12 +311,12 @@ export default function HomePage() {
         >
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-violet-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-2xl" />
 
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
               Ready to automate your Instagram leads?
             </span>
           </h2>
-          <p className="text-xl text-zinc-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-zinc-400 mb-8 max-w-2xl mx-auto">
             Join hundreds of businesses turning comments into revenue. Setup takes 5 minutes.
           </p>
           <Link
