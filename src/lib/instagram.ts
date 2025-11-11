@@ -4,10 +4,10 @@ import { logError, logInfo } from './logging';
 const IG_GRAPH_VERSION = 'v22.0';
 
 export async function sendInstagramDm(recipientId: string, message: string) {
-  const accessToken = process.env.META_APP_ACCESS_TOKEN;
+  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
 
   if (!accessToken) {
-    logError('META_APP_ACCESS_TOKEN not set');
+    logError('INSTAGRAM_ACCESS_TOKEN not set');
     return;
   }
 

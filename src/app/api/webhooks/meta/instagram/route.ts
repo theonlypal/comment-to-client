@@ -12,9 +12,9 @@ function verifyMetaSignature(rawBody: string, signatureHeader: string | null): b
     return false;
   }
 
-  const secret = process.env.META_WEBHOOK_SECRET;
+  const secret = process.env.META_APP_SECRET;
   if (!secret) {
-    logError('META_WEBHOOK_SECRET not set');
+    logError('META_APP_SECRET not set');
     return false;
   }
 
